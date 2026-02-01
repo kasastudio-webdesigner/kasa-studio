@@ -15,4 +15,5 @@ Je crée des **sites web élégants, performants et sur mesure**, adaptés à ch
 ## Contact
 Vous avez un projet ou une idée ? [Contactez-moi](#) !
 
-Portfolio en ligne : [https://yourusername.github.io/kasa-studio/](https://yourusername.github.io/kasa-studio/)
+Portfolio en ligne : https://kasastudio-webdesigner.github.io/kasa-studio/
+
