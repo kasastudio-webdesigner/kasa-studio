@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kasa Studio - Marwa Chahedi | Web Designer & Développeuse. Création de sites web élégants, performants et sur mesure. Basée en France. Français & Anglais.">
+    <meta name="keywords" content="Marwa Chahedi, Web Design, UX/UI, HTML, CSS, Portfolio, France, Français, Anglais, Développement web">
+    <meta name="author" content="Marwa Chahedi">
+    <title>Marwa Chahedi | Kasa Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* ======= Success popup styles ======= */
+        .success-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.8);
+            background-color: #ffffff;
+            color: #333333;
+            padding: 2rem 3rem;
+            border-radius: 15px;
+            box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+            opacity: 0;
+            pointer-events: none;
+            text-align: center;
+            z-index: 9999;
+            max-width: 350px;
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .success-popup.show {
+            opacity: 1;
+            pointer-events: auto;
+            animation: popupBounce 0.6s forwards;
+        }
+
+        .success-popup svg {
+            margin-bottom: 1rem;
+        }
+
+        .success-popup h3 {
+            margin: 0.5rem 0;
+            color: #8B2D25;
+        }
+
+        .success-popup p {
+            font-size: 0.95rem;
+            color: #555555;
+        }
+
+        @keyframes popupBounce {
+            0% { transform: translate(-50%, -50%) scale(0.8); opacity: 0; }
+            60% { transform: translate(-50%, -50%) scale(1.05); opacity: 1; }
+            100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+        }
+
+        @keyframes fadeOut {
+            0% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+            100% { opacity: 0; transform: translate(-50%, -50%) scale(0.8); }
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar">
+        <div class="logo">Kasa Studio</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Accueil</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section id="hero" class="hero">
+    <div class="hero-content">
+        <h1>Bienvenue chez Kasa Studio</h1>
+        <p>Je crée des expériences digitales élégantes, performantes et sur mesure pour chaque projet.</p>
+        <div class="hero-buttons">
+            <a href="#contact" class="btn-primary">Contactez-moi</a>
+            <a href="#portfolio" class="btn-secondary">Découvrir mon travail</a>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+    <h2>À propos de moi</h2>
+    <p>Je suis <strong>Marwa Chahedi</strong>, web designer et développeuse passionnée, basée en France. Je parle couramment le Français et l’Anglais, et je mets mon expertise au service de sites web qui combinent <strong>esthétique, performance et expérience utilisateur fluide</strong>.</p>
+    <p>Chaque projet est pour moi une opportunité de raconter une histoire unique grâce au design et à l’interface, tout en captivant vos visiteurs et en les guidant naturellement.</p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section dark">
+    <h2>Compétences</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Web Design & UX/UI</h3>
+            <p>Interfaces modernes et intuitives, conçues pour séduire et retenir l’attention des utilisateurs.</p>
+        </div>
+        <div class="card">
+            <h3>HTML & CSS</h3>
+            <p>Développement front-end réactif et optimisé pour tous types d’écrans et appareils.</p>
+        </div>
+        <div class="card">
+            <h3>JavaScript & Interactions</h3>
+            <p>Animations, micro-interactions et effets dynamiques pour un site vivant et engageant.</p>
+        </div>
+        <div class="card">
+            <h3>SEO & Performance</h3>
+            <p>Optimisation pour les moteurs de recherche et vitesse de chargement maximale.</p>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+    <h2>Services</h2>
+    <div class="services">
+        <div class="service">
+            <h3>Création de sites web</h3>
+            <p>Sites vitrines et portfolios sur mesure, conçus pour refléter votre identité et vos valeurs.</p>
+        </div>
+        <div class="service">
+            <h3>Web Design UI/UX</h3>
+            <p>Design élégant et navigation fluide pour offrir la meilleure expérience utilisateur possible.</p>
+        </div>
+        <div class="service">
+            <h3>Refonte de site</h3>
+            <p>Modernisation et optimisation de sites existants pour plus de performance et de style.</p>
+        </div>
+        <div class="service">
+            <h3>Identité visuelle digitale</h3>
+            <p>Logos, couleurs et éléments graphiques harmonisés pour renforcer votre image en ligne.</p>
+        </div>
+    </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="section dark">
+    <h2>Portfolio</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Artiste local</h3>
+            <p>Site vitrine moderne avec animations et design responsive adapté à tous les écrans.</p>
+        </div>
+        <div class="card">
+            <h3>Site d’entreprise</h3>
+            <p>Création d’un site professionnel pour une petite entreprise, avec navigation claire et design élégant.</p>
+        </div>
+        <div class="card">
+            <h3>Portfolio interactif</h3>
+            <p>Création d’un portfolio dynamique pour un photographe avec effets visuels modernes et intuitifs.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+    <h2>Contactez-moi</h2>
+    <p>Vous avez un projet ou une idée ? Discutons-en et donnons-lui vie ensemble !</p>
+    
+    <form class="contact-form" action="https://formspree.io/f/xdadeyqk" method="POST">
+        <input type="text" name="name" placeholder="Nom" required>
+        <input type="email" name="_replyto" placeholder="Email" required>
+        <textarea name="message" placeholder="Votre message..." required></textarea>
+        <button type="submit" class="btn-primary">Envoyer</button>
+    </form>
+
+    <!-- Success popup -->
+    <div class="success-popup" id="successPopup">
+        <div class="popup-content">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" stroke="#8B2D25" stroke-width="6" viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5"/>
+            </svg>
+            <h3>Message envoyé !</h3>
+            <p>Merci pour votre message. Je vous répondrai très bientôt.</p>
+        </div>
+    </div>
+</section>
+
+<script>
+const form = document.querySelector('.contact-form');
+const popup = document.getElementById('successPopup');
+
+form.addEventListener('submit', function(e) {
+    // Show popup
+    setTimeout(() => {
+        popup.classList.add('show');
+        form.reset();
+
+        // Fade out after 3s
+        setTimeout(() => {
+            popup.style.animation = 'fadeOut 1s forwards';
+        }, 3000);
+
+        // Remove show class & reset animation after fade
+        setTimeout(() => {
+            popup.classList.remove('show');
+            popup.style.animation = '';
+        }, 4000);
+    }, 500);
+});
+</script>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p><strong>Marwa Chahedi</strong> — Web Design & Développement</p>
+    <p>© 2026 Tous droits réservés</p>
+</footer>
+
+</body>
+</html>
